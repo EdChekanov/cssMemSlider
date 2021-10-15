@@ -1,0 +1,17 @@
+@media (max-width: 380px) {
+  .slider_main {
+    height: 40vh;
+  }
+  .slider_footer {
+    height: 40vh;
+    flex-direction: column;
+  }
+  .footer_controls {
+    order: 1;
+    align-self: center;
+  }
+  .footer_text {
+    order: 2;
+    height: 15vh;
+  }
+}
