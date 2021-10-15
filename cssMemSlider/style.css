@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
 }
 body {
   font-family: 'Rubik', sans-serif;
@@ -17,13 +19,18 @@ body {
   justify-content: space-between;
 }
 .slider_main {
-  height: 70vh;
+  height: 80vh;
   width: 100%;
   border-radius: 0.5rem;
-  outline: 1px solid red;
+  background: url(images/0.jpg) center no-repeat;
+  background-size: cover;
+  transition: background 0.8s ease-out;
 }
 .slider_footer {
-  height: 15vh;
+  height: 10vh;
   width: 100%;
   outline: 1px solid red;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
