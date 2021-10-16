@@ -13,3 +13,4 @@ function changeSlide(evt) {
 }
 
 controls.forEach(el => el.addEventListener('click', changeSlide));
+controls.forEach(el => el.addEventListener('touch', changeSlide));
