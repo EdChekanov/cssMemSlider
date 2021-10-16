@@ -25,20 +25,21 @@ body {
   height: 80vh;
   width: 100%;
   border-radius: 0.5rem;
-  background: url(images/0.jpg) center no-repeat;
+  background-image: url(images/0.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  transition: background 1s ease-out;
+  transition: background .5s ease-out;
 }
 .slider_footer {
   height: 10vh;
   width: 100%;
-  outline: 1px solid red;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
-.footer_text {
-  transition: 1s;
+.footer_text p{
+  transition: .5s;
 }
 .footer_controls ul{
   display: flex;
@@ -54,10 +55,12 @@ input[type="radio"] + label {
   justify-content: center;
   align-items: flex-start;
   cursor: pointer;
-  outline: 1px solid red;
 }
 input[type="radio"] + label:hover {
   --control_color: #fff;
+}
+input[type="radio"] + label:active .check{
+  opacity: 0.8;
 }
 .check {
   width: 1rem;
@@ -65,6 +68,7 @@ input[type="radio"] + label:hover {
   border-radius: 50%;
   background: var(--control_color);
   border: 0.15rem solid var(--control_color);
+  pointer-events: none;
 }
 input:checked + label .check {
   background: transparent;

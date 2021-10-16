@@ -1,9 +1,12 @@
 @media (max-width: 380px) {
+  .slider {
+    justify-content: start;
+  }
   .slider_main {
-    height: 40vh;
+    height: 50vh;
+    margin-bottom: 2rem;
   }
   .slider_footer {
-    height: 40vh;
     flex-direction: column;
   }
   .footer_controls {
@@ -12,6 +15,5 @@
   }
   .footer_text {
     order: 2;
-    height: 15vh;
   }
 }
